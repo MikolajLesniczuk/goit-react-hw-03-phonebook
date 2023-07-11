@@ -32,6 +32,7 @@ class ContactForm extends Component {
       [name]: value,
     }));
   };
+
   render() {
     return (
       <>
