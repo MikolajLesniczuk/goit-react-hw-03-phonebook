@@ -52,17 +52,17 @@ class App extends Component {
   setFilter = value => {
     this.setState({ filter: value });
   };
-  componentDidUpdate() {
-    localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
-  }
+  // componentDidUpdate() {
+  //   localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+  // }
 
-  componentDidMount() {
-    const getLocal = localStorage.getItem('contacts');
+  // componentDidMount() {
+  //   const getLocal = localStorage.getItem('contacts');
 
-    this.setState({
-      contacts: JSON.parse(getLocal),
-    });
-  }
+  //   this.setState({
+  //     contacts: JSON.parse(getLocal),
+  //   });
+  // }
 
   render() {
     const { contacts, filter } = this.state;
