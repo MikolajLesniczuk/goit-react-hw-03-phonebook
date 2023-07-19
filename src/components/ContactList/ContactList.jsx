@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import PropTypes from 'prop-types';
 import s from './ContactList.module.css';
 
 class ContactList extends Component {
@@ -21,15 +20,5 @@ class ContactList extends Component {
     );
   }
 }
-
-ContactList.propTypes = {
-  contacts: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string,
-      number: PropTypes.number,
-    })
-  ),
-  deleteContact: PropTypes.func,
-};
 
 export default ContactList;
